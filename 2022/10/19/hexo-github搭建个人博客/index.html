@@ -1,153 +1,155 @@
+
+
+
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>hexo+github搭建个人博客 | Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="一、安装并配置Node.js（原本就有安装）参考：(1条消息) Node.js安装与配置（详细步骤）_普通网友的博客-CSDN博客_nodejs安装配置 1、下载Node.js官网下载安装位置与环境变量配置  系统属性-环境变量-系统变量-Path  验证是否安装成功  2、修改npm全局下载位置（避免占用C盘内存）原来的缓存地址：   在 nodejs 安装目录下，创建 “node_global">
-<meta property="og:type" content="article">
-<meta property="og:title" content="hexo+github搭建个人博客">
-<meta property="og:url" content="http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/index.html">
-<meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="一、安装并配置Node.js（原本就有安装）参考：(1条消息) Node.js安装与配置（详细步骤）_普通网友的博客-CSDN博客_nodejs安装配置 1、下载Node.js官网下载安装位置与环境变量配置  系统属性-环境变量-系统变量-Path  验证是否安装成功  2、修改npm全局下载位置（避免占用C盘内存）原来的缓存地址：   在 nodejs 安装目录下，创建 “node_global">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/dbEsdpJAbDgfnDouz7Qhmv/image.png?auth_key=1666234294-bFSiCV7NeiRGzAvU7Rk1RG-0-94ff36a7ae15420a032d643c1c7133bf">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/kLXh7gMpajbJqdbj9UNCAe/image.png?auth_key=1666234294-izaXqxFnVubcfYFA8DVxGE-0-f5f9cdec5158893664763e790f796c97">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/eNnqnYndL9bJC8ax5wmdyY/image.png?auth_key=1666234295-msE8GEtxJ2984k1eAhAuRm-0-21922eb21706a57f60e8b140d0b5103a">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/cbJC3bz45mRwkJhMNrdkMp/image.png?auth_key=1666234294-h2XL7ajtg2aZENWg7FrCWM-0-fde18065f2cc0f11ddc43fd5b6f25fcb">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/gFWe3DbgnbPAdSNwfRTUPS/image.png?auth_key=1666234294-sd5rnjXGR6Zj13QYeG6TMJ-0-fd4ac98e804bd08e8689b0e446937846">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/orRQBKN7k6WTBpy6Mq4Fiz/image.png?auth_key=1666234294-8cggDtfjFzqLDS9Hj1DE9F-0-470db3ea328d066eec9e6dd0cdf8bc31">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/rfbUySC6Kj6uK879NPfq3Y/image.png?auth_key=1666234295-w2J4PGi4eAaQYohejseDgi-0-4ed5a196682e80f8a3743b71eea9dcb8">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/6AULKW2J9fbAaQtRKdWknB/image.png?auth_key=1666234294-kVjchuxMRjgsaSwyyeK94S-0-291261c5aec2b8da105352b698d6f9b5">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/g8HwNL7vK5Wh8xLcEBqYQN/image.png?auth_key=1666234295-ge8YMc322Tz6DJGAXfjPWk-0-48a97eb1e4a5d3be207e82d45a37f611">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/a78HU7t9ju9uhEkKhvdP1v/image.png?auth_key=1666234294-u3ja2PZgKcSLa78PPmrs7P-0-423768769f34aacc76a33c2aeab61dd6">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/rsGetAMtCFs6BHsbArJM1Z/image.png?auth_key=1666234294-8YNckabKVuzpsTTehQWAFA-0-cd6b9a1731e281b74a5d48f5d2d9cb18">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/4khGsDxLivaBz82fuVjekJ/image.png?auth_key=1666234294-aJLPWHRMWm9KaiciceRPSB-0-8eb9c9e0bb3705c4c7eeaaa4aac359ae">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/hh8DdZ3jigpn9s4UBd9Yme/image.png?auth_key=1666234294-6PuX1jTkNqSQJLC4LDpdnw-0-9e704c473b9f0b378e51973c8c78fb40">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/viK3RT8YZ4VYD5rueXEeRF/image.png?auth_key=1666234340-scKwx518LZjY5X1xRxeK7H-0-f275e8fe44b3c192866289b753669ac2">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/mdAsx1ns1Zd7Me1UAKnFhh/image.png?auth_key=1666234340-cbtBCm6szUWNK2QaUXi6an-0-62bc45726e5a25aebef3bcee560c9e11">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/5FCMqBAnHtasXLe2575AFb/image.png?auth_key=1666234340-c1xQhnFh4pbUNAKfS59N64-0-858e6b4fa531dd68c4fc206f901147d0">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/pP3hdS232zBmiexdWB9mCA/image.png?auth_key=1666234341-gTfwAxWwns1WBa2DhNgD4R-0-e11c1ada8f290984fc61d4403c0dc67d">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/uabqP7kwtZEr5dhDw7oQid/image.png?auth_key=1666234342-vRpCss79C8yJHSGQoZxwHk-0-507f00a4ff294f1e94b7cebb20f539fd">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/cJzmmx99bX31b7Nxv6hC36/image.png?auth_key=1666234340-t3c65SY6VpVP4GAdJDjKAs-0-d672bf09f1087997aa909e9b4bfd404c">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/mdv9aCf9frgckFKYg533pA/image.png?auth_key=1666234341-hbGMMnrAzF6YhiVeCmb3jn-0-80970ff71e6f9fcc33f5ea664e37db27">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/gZc2FMpKer8uPaiAKxR6rJ/image.png?auth_key=1666234341-paoWEbmt2SM9Gifc3YqDYT-0-526aaf39daff377317694c9690068bc0">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/ug3LRbL6zQr9qJ4pQNQELp/image.png?auth_key=1666234341-5x1WqdyX1EHZNvATf4uqPb-0-3faa506a0603379e791bc7ee8b095bcb">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/nL5NgVEjMGgHcHrThe5U9Z/image.png?auth_key=1666234341-8uWNBYYkxpGcEYA8TUvzqn-0-68ee1ef56f94645945c0b9eb908578ea">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/rkfacqynSmjKzeEARVkNvJ/image.png?auth_key=1666234341-bLysHSHU2us2PTCLAVAVv-0-582abcc741f8b060bd0091b23b72bd40">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/gyUKUKWJniZpHPCa76v6sN/image.png?auth_key=1666234341-oyMAa9eN3qpqxfnzMYb7yn-0-6716b08a1a2b4391d039df6d7e74d61a">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/n9zEF1vWGGwBmXnr5z9cER/image.png?auth_key=1666234341-qgD5cuUQgruXGb9gKbCbA2-0-00d439b359a046b0de6a2850687db6cc">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/6VuVDzUBZZ7JoM2nVeFcm7/image.png?auth_key=1666234342-sAZKxts7i9nFi6yDpjpswY-0-e96119949f6573ade2a4a27765db0c16">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/6rWb55DCD3rruYjbPwrpkw/image.png?auth_key=1666234341-he9LPJ6LMtTf7np6114xm8-0-376f055db201142acf88cb2d7b106a94">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/oFuTSE3REDJqKEWr9aAzf/image.png?auth_key=1666234341-qghf99fsXsVf8MkT2hJipr-0-852e6c7a093876902cee8eb5ea829ed3">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/67RR2EDFKFhw8DhhwuekEr/image.png?auth_key=1666234341-9Qaa9BqKg6UGNxEPePuYgj-0-7a11ee4a31972f7bfe4973655427dc24">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/achQnr2JmjSEH1wgbrjBFA/image.png?auth_key=1666234341-mFzM4q6UuxC19UaKEK3XeF-0-960db621c7b583031c5d2a5fb80c5c53">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/fQ1MFyLNgiErMSiDCZZbdL/image.png?auth_key=1666234341-jzW9Dh2FAXk2W8qwRvHm76-0-68dd1d09d86e15508f793507a7ac8c30">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/7nXRnPmTjZTLmkDY3JvRgV/image.png?auth_key=1666234341-hQaNXYrhxCy1jxdBksuu32-0-56c04718aab85bd86ff031234eb46810">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/eKmQfUg2QYV64uT1ApSCCU/image.png?auth_key=1666234341-k91ZScnhqDLmYaoGEihRnY-0-5b3931f72d2509607a5faabef47c138d">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/aHNUAhVKZqFRLWBgtURdMk/image.png?auth_key=1666234341-j1RVyixJWeyPdQaAXe3Ci-0-bc51e137a3424ef95a6fdbb64509d03a">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/puvRVkbFrvu5dnYuYnk2o4/image.png?auth_key=1666234342-o2jNRvoicLhSZ6tH72FroE-0-44de2a9ae7ca5b5ea8fd23b4b0eb4a77">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/5FrLJxgZuiQdqMYEt29Fer/image.png?auth_key=1666234341-bTJUtvRsk7xr3qjwgbqxQo-0-24710a6ef4de2b364a74af05b2849c67">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/x1Drbv7GfjyTqh3cjg8kXR/image.png?auth_key=1666234341-g8ft18xB1tNTufQ3BeFPnM-0-85aeba133cab56c8b22d293ff2e900a5">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/6WEEFLzpMBMor5FW1vbLeW/image.png?auth_key=1666234341-mnmpah125ozWGTDoqqZ6ik-0-dd0873759617db4a7f32b14353bec4fd">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/epyDtoMzoUyMUBU9oMnXQW/image.png?auth_key=1666234361-sxroAPgskMdweubscCqurs-0-dfdb11cd8c6383b25106ae43f228bfea">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/nyvnPdTspjUhJ5A13Zpxpa/image.png?auth_key=1666234361-p2R69EPD7ozR5PzkJ5MM3w-0-3ddc260adb15295a5678c98b1d44a46d">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/33aMMLrE6aBdNV8xkERs5P/image.png?auth_key=1666234361-v7qdBJgEEC7ZpEXoC2jakC-0-5a919b56ffe701bfe18fbb39afcf8dc7">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/4PoxuAwATYQCPvppDPehU5/image.png?auth_key=1666234361-tb5QRsn4NVrgfpv1GjoBnP-0-5daa9db93efde938ea5f44d316788404">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/8H8W89sfNjBJPTQ4nkJs2V/image.png?auth_key=1666234361-coDtbFhaAbbxWA8YzsTyre-0-cf0ddfd15000befbe7f8f604de63d81c">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/a3jpgGULo5nX8H1WewJ867/image.png?auth_key=1666234361-qE4fxiYUYgVxcu2Pjjv1dg-0-e2dd901a32c2bafcf1d8c7c4aa024e11">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/gUiRbsySc8ibDmeaKv617D/image.png?auth_key=1666234361-2rPQBk17upnyDBrwqED4dZ-0-6db67a0ef9d01f738b25b6f60c115eb2">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/i1zk3ULUwFqL9pp3qfNVFo/image.png?auth_key=1666234361-x5HGE9ZicW48LhdwYeJthB-0-c398629b01ef07eab306e1c205da4684">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/vELUov7RWP8RRzpp1fAmuE/image.png?auth_key=1666234361-tuzAaC5q8DPNvwJivXSinm-0-3a2a0335f34ddceac35c717604239347">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/efFpXakv1ryjWzg4ydzDgK/image.png?auth_key=1666234361-r3W9kDkChmmG7JwUKdeRU1-0-42da49eadc15d21c0bb573ac2b1b85c4">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/eVeXuVLA7VqxhBCRvxDpTK/image.png?auth_key=1666234361-mAz1Go1fVXsj4b4Lgg1BTp-0-169b3d06cced30a4732903e3fd6f7fd9">
-<meta property="og:image" content="https://secure2.wostatic.cn/static/p2eWu4b61KgRHoCb1J2bv8/image.png?auth_key=1666234361-hdApPV2gmJQDc6TckfEvcU-0-91528419b600355863843da8bd7a47cc">
-<meta property="article:published_time" content="2022-10-19T09:39:07.000Z">
-<meta property="article:modified_time" content="2022-10-20T02:59:31.744Z">
-<meta property="article:author" content="John Doe">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://secure2.wostatic.cn/static/dbEsdpJAbDgfnDouz7Qhmv/image.png?auth_key=1666234294-bFSiCV7NeiRGzAvU7Rk1RG-0-94ff36a7ae15420a032d643c1c7133bf">
-  
-    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#FFF">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+<link rel="alternate" type="application/rss+xml" title="Hexo" href="http://example.com/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="Hexo" href="http://example.com/atom.xml" />
+<link rel="alternate" type="application/json" title="Hexo" href="http://example.com/feed.json" />
+
+<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="canonical" href="http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
 
-  
+
+
+  <title>
+hexo+github搭建个人博客 |
+Yume Shoka = Hexo</title>
 <meta name="generator" content="Hexo 6.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div id="loading">
+    <div class="cat">
+      <div class="body"></div>
+      <div class="head">
+        <div class="face"></div>
+      </div>
+      <div class="foot">
+        <div class="tummy-end"></div>
+        <div class="bottom"></div>
+        <div class="legs left"></div>
+        <div class="legs right"></div>
+      </div>
+      <div class="paw">
+        <div class="hands left"></div>
+        <div class="hands right"></div>
       </div>
     </div>
   </div>
-</header>
+  <div id="container">
+    <header id="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="inner">
+        <div id="brand">
+          <div class="pjax">
+          
+  <h1 itemprop="name headline">hexo+github搭建个人博客
+  </h1>
+  
+<div class="meta">
+  <span class="item" title="Created: 2022-10-19 17:39:07">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <span class="text">Posted on</span>
+    <time itemprop="dateCreated datePublished" datetime="2022-10-19T17:39:07+08:00">2022-10-19</time>
+  </span>
+</div>
 
-      <div class="outer">
-        <section id="main"><article id="post-hexo-github搭建个人博客" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2022-10-19T09:39:07.000Z" itemprop="datePublished">2022-10-19</time>
-</a>
-    
+
+          </div>
+        </div>
+        <nav id="nav">
+  <div class="inner">
+    <div class="toggle">
+      <div class="lines" aria-label="Toggle navigation bar">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </div>
+    </div>
+    <ul class="menu">
+      <li class="item title"><a href="/" rel="start">Yume Shoka</a></li>
+    </ul>
+    <ul class="right">
+      <li class="item theme">
+        <i class="ic i-sun"></i>
+      </li>
+      <li class="item search">
+        <i class="ic i-search"></i>
+      </li>
+    </ul>
   </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      hexo+github搭建个人博客
-    </h1>
-  
+</nav>
 
-      </header>
+      </div>
+      <div id="imgs" class="pjax">
+        <ul>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipeubcbajj20zk0m8h1h.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1giclhtuo6nj20zk0m8ttm.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicliierfjj20zk0m8npd.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipet4bz0yj20zk0m8e81.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gicm07ih54j20zk0m84qp.jpg"></li>
+          <li class="item" data-background-image="https://tva1.sinaimg.cn/large/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></li>
+        </ul>
+      </div>
+    </header>
+    <div id="waves">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" />
+          <use xlink:href="#gentle-wave" x="48" y="3" />
+          <use xlink:href="#gentle-wave" x="48" y="5" />
+          <use xlink:href="#gentle-wave" x="48" y="7" />
+        </g>
+      </svg>
+    </div>
+    <main>
+      <div class="inner">
+        <div id="main" class="pjax">
+          
+  <div class="article wrap">
     
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <h3 id="一、安装并配置Node-js（原本就有安装）"><a href="#一、安装并配置Node-js（原本就有安装）" class="headerlink" title="一、安装并配置Node.js（原本就有安装）"></a>一、安装并配置Node.js（原本就有安装）</h3><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_67392273/article/details/126113759?ops_request_misc=%7B%22request_id%22:%22166607798116800180697325%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=166607798116800180697325&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-126113759-null-null.142%5Ev58%5Epc_search_tree,201%5Ev3%5Econtrol_1&utm_term=%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AENode.js&spm=1018.2226.3001.4187">(1条消息) Node.js安装与配置（详细步骤）_普通网友的博客-CSDN博客_nodejs安装配置</a></p>
+<div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+<i class="ic i-home"></i>
+<span><a href="/">Home</a></span>
+</div>
+
+    <article itemscope itemtype="http://schema.org/Article" class="post block" lang="en">
+  <link itemprop="mainEntityOfPage" href="http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">
+
+  <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <meta itemprop="image" content="/images/avatar.jpg">
+    <meta itemprop="name" content="John Doe">
+    <meta itemprop="description" content=", ">
+  </span>
+
+  <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+    <meta itemprop="name" content="Hexo">
+  </span>
+
+  <div class="body md" itemprop="articleBody">
+    
+
+    <h3 id="一、安装并配置Node-js（原本就有安装）"><a href="#一、安装并配置Node-js（原本就有安装）" class="headerlink" title="一、安装并配置Node.js（原本就有安装）"></a>一、安装并配置Node.js（原本就有安装）</h3><p>参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/m0_67392273/article/details/126113759?ops_request_misc=%7B%22request_id%22:%22166607798116800180697325%22,%22scm%22:%2220140713.130102334..%22%7D&request_id=166607798116800180697325&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-126113759-null-null.142%5Ev58%5Epc_search_tree,201%5Ev3%5Econtrol_1&utm_term=%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AENode.js&spm=1018.2226.3001.4187">(1条消息) Node.js安装与配置（详细步骤）_普通网友的博客-CSDN博客_nodejs安装配置</a></p>
 <h4 id="1、下载Node-js官网下载"><a href="#1、下载Node-js官网下载" class="headerlink" title="1、下载Node.js官网下载"></a>1、下载<a target="_blank" rel="noopener" href="http://nodejs.cn/download/"><strong>Node.js官网下载</strong></a></h4><p>安装位置与环境变量配置  系统属性-环境变量-系统变量-Path</p>
 <p><img src="https://secure2.wostatic.cn/static/dbEsdpJAbDgfnDouz7Qhmv/image.png?auth_key=1666234294-bFSiCV7NeiRGzAvU7Rk1RG-0-94ff36a7ae15420a032d643c1c7133bf"></p>
 <p>验证是否安装成功</p>
@@ -254,113 +256,233 @@
 <p>完成</p>
 <p><img src="https://secure2.wostatic.cn/static/p2eWu4b61KgRHoCb1J2bv8/image.png?auth_key=1666234361-hdApPV2gmJQDc6TckfEvcU-0-91528419b600355863843da8bd7a47cc"></p>
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" data-id="cl9gh6ah30001o4t5fyur29jt" data-title="hexo+github搭建个人博客" class="article-share-link">Share</a>
-      
-      
-      
-    </footer>
   </div>
-  
-    
-<nav id="article-nav">
-  
-  
-    <a href="/2022/10/19/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">烦死了</div>
-    </a>
-  
-</nav>
 
-  
+   <footer>
+
+    <div class="meta">
+  <span class="item">
+    <span class="icon">
+      <i class="ic i-calendar-check"></i>
+    </span>
+    <span class="text">Edited on</span>
+    <time title="Modified: 2022-10-20 10:59:31" itemprop="dateModified" datetime="2022-10-20T10:59:31+08:00">2022-10-20</time>
+  </span>
+</div>
+
+      
+<div class="reward">
+  <button><i class="ic i-heartbeat"></i> Donate</button>
+  <p>Give me a cup of [coffee]~(￣▽￣)~*</p>
+  <div id="qr">
+      
+      <div>
+        <img data-src="/images/wechatpay.png" alt="John Doe WeChat Pay">
+        <p>WeChat Pay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/alipay.png" alt="John Doe Alipay">
+        <p>Alipay</p>
+      </div>
+      
+      <div>
+        <img data-src="/images/paypal.png" alt="John Doe PayPal">
+        <p>PayPal</p>
+      </div>
+  </div>
+</div>
+
+      
+
+<div id="copyright">
+<ul>
+  <li class="author">
+    <strong>Post author:  </strong>John Doe <i class="ic i-at"><em>@</em></i>Hexo
+  </li>
+  <li class="link">
+    <strong>Post link: </strong>
+    <a href="http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="hexo+github搭建个人博客">http://example.com/2022/10/19/hexo-github搭建个人博客/</a>
+  </li>
+  <li class="license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+  </footer>
+
 </article>
 
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
-    </div>
   </div>
-
-
   
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/">hexo+github搭建个人博客</a>
-          </li>
-        
-          <li>
-            <a href="/2022/10/19/hello-world/">烦死了</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
 
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+<div class="post-nav">
+    <div class="item left">
       
-      &copy; 2022 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
+
+  <a href="/2022/10/19/hello-world/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva1.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclimtf7dj20zk0m8qav.jpg" title="烦死了">
+  <span class="type">Previous Post</span>
+  <span class="category"><i class="ic i-flag"></i> </span>
+  <h3>烦死了</h3>
+  </a>
 
     </div>
-    <nav id="mobile-nav">
+    <div class="item right">
+    </div>
+</div>
+
   
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
+  <div class="wrap" id="comments"></div>
+
+
+        </div>
+        <div id="sidebar">
+          
+
+<div class="inner">
+
+  <div class="panels">
+    <div class="inner">
+      <div class="contents panel pjax" data-title="Contents">
+          <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%80%E3%80%81%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AENode-js%EF%BC%88%E5%8E%9F%E6%9C%AC%E5%B0%B1%E6%9C%89%E5%AE%89%E8%A3%85%EF%BC%89"><span class="toc-number">1.</span> <span class="toc-text">一、安装并配置Node.js（原本就有安装）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E4%B8%8B%E8%BD%BDNode-js%E5%AE%98%E7%BD%91%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.1.</span> <span class="toc-text">1、下载Node.js官网下载</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%BF%AE%E6%94%B9npm%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BD%E4%BD%8D%E7%BD%AE%EF%BC%88%E9%81%BF%E5%85%8D%E5%8D%A0%E7%94%A8C%E7%9B%98%E5%86%85%E5%AD%98%EF%BC%89"><span class="toc-number">1.2.</span> <span class="toc-text">2、修改npm全局下载位置（避免占用C盘内存）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E8%AE%BE%E7%BD%AE%E9%95%9C%E5%83%8F%EF%BC%8C%E4%B8%8B%E8%BD%BD%E9%80%9F%E5%BA%A6%E6%9B%B4%E5%BF%AB"><span class="toc-number">1.3.</span> <span class="toc-text">3、设置镜像，下载速度更快</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E5%85%A8%E5%B1%80%E4%B8%8B%E8%BD%BDcnpm"><span class="toc-number">1.4.</span> <span class="toc-text">4、全局下载cnpm</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BA%8C%E3%80%81%E5%AE%89%E8%A3%85%E5%B9%B6%E9%85%8D%E7%BD%AEGit"><span class="toc-number">2.</span> <span class="toc-text">二、安装并配置Git</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E4%B8%8B%E8%BD%BDhttps-git-scm-com-downloads"><span class="toc-number">2.1.</span> <span class="toc-text">1、下载https:&#x2F;&#x2F;git-scm.com&#x2F;downloads</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E6%8C%87%E5%AE%9A%E7%94%A8%E6%88%B7%E5%90%8D%E5%92%8C%E9%82%AE%E7%AE%B1"><span class="toc-number">2.2.</span> <span class="toc-text">2、指定用户名和邮箱</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E4%B8%80%E4%BA%9B%E6%93%8D%E4%BD%9C%EF%BC%88%E5%90%8E%E9%9D%A2%E8%A1%A5%E8%A1%A5%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">3、一些操作（后面补补）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#4%E3%80%81%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93"><span class="toc-number">2.4.</span> <span class="toc-text">4、远程仓库</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#5%E3%80%81%E5%88%9B%E5%BB%BA%E3%80%81%E5%90%88%E5%B9%B6%E3%80%81%E5%88%A0%E9%99%A4%E5%88%86%E6%94%AF"><span class="toc-number">2.5.</span> <span class="toc-text">5、创建、合并、删除分支</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%89%E3%80%81hexo%E9%83%A8%E7%BD%B2%E5%88%B0GitHub"><span class="toc-number">3.</span> <span class="toc-text">三、hexo部署到GitHub</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1%E3%80%81%E4%B8%8B%E8%BD%BDhexo%E5%B9%B6%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">3.1.</span> <span class="toc-text">1、下载hexo并初始化</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#2%E3%80%81%E4%B8%8A%E4%BC%A0gitbub"><span class="toc-number">3.2.</span> <span class="toc-text">2、上传gitbub</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3%E3%80%81%E5%AE%89%E8%A3%85%E8%87%AA%E5%8A%A8%E9%83%A8%E7%BD%B2%E5%B7%A5%E5%85%B7%E2%80%94%E6%AF%8F%E6%AC%A1%E9%83%BD%E8%A6%81"><span class="toc-number">3.3.</span> <span class="toc-text">3、安装自动部署工具—每次都要</span></a></li></ol></li></ol>
+      </div>
+      <div class="related panel pjax" data-title="Related">
+      </div>
+      <div class="overview panel" data-title="Overview">
+        <div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <img class="image" itemprop="image" alt="John Doe"
+      data-src="/images/avatar.jpg">
+  <p class="name" itemprop="name">John Doe</p>
+  <div class="description" itemprop="description"></div>
+</div>
+
+<nav class="state">
+    <div class="item posts">
+      <a href="/archives/">
+        <span class="count">2</span>
+        <span class="name">posts</span>
+      </a>
+    </div>
 </nav>
-    
 
+<div class="social">
+</div>
 
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
-
+<ul class="menu">
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+    
+  <li class="item">
+    <a href="/" rel="section"><i class="ic i-home"></i>Home</a>
+  </li>
 
 
+</ul>
 
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+      </div>
+    </div>
   </div>
+
+  <ul id="quick">
+    <li class="prev pjax">
+    </li>
+    <li class="up"><i class="ic i-arrow-up"></i></li>
+    <li class="down"><i class="ic i-arrow-down"></i></li>
+    <li class="next pjax">
+    </li>
+    <li class="percent"></li>
+  </ul>
+</div>
+
+
+        </div>
+        <div class="dimmer"></div>
+      </div>
+    </main>
+    <footer id="footer">
+      <div class="inner">
+        <div class="widgets">
+          
+<div class="rpost pjax">
+  <h2>Random Posts</h2>
+  <ul>
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="hexo+github搭建个人博客">hexo+github搭建个人博客</a></span>
+  </li>
+
+      
+  <li class="item">
+    
+<div class="breadcrumb">
+</div>
+
+    <span><a href="/2022/10/19/hello-world/" title="烦死了">烦死了</a></span>
+  </li>
+
+  </ul>
+</div>
+<div>
+  <h2>Recent Comments</h2>
+  <ul class="leancloud-recent-comment"></ul>
+</div>
+
+        </div>
+        <div class="status">
+  <div class="copyright">
+    
+    &copy; 2010 – 
+    <span itemprop="copyrightYear">2022</span>
+    <span class="with-love">
+      <i class="ic i-sakura rotate"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">John Doe @ Yume Shoka</span>
+  </div>
+  <div class="powered-by">
+    Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
+  </div>
+</div>
+
+      </div>
+    </footer>
+  </div>
+<script data-config type="text/javascript">
+  var LOCAL = {
+    path: '2022/10/19/hexo-github搭建个人博客/',
+    favicon: {
+      show: "（●´3｀●）Goooood",
+      hide: "(´Д｀)Booooom"
+    },
+    search : {
+      placeholder: "Search for Posts",
+      empty: "We didn't find any results for the search: ${query}",
+      stats: "${hits} results found in ${time} ms"
+    },
+    valine: true,fancybox: true,
+    copyright: 'Copied to clipboard successfully! <br> All articles in this blog are licensed under <i class="ic i-creative-commons"></i>BY-NC-SA.',
+    ignores : [
+      function(uri) {
+        return uri.includes('#');
+      },
+      function(uri) {
+        return new RegExp(LOCAL.path+"$").test(uri);
+      }
+    ]
+  };
+</script>
+
+<script src="https://cdn.polyfill.io/v2/polyfill.js"></script>
+
+<script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script>
+
+<script src="/js/app.js?v=0.2.5"></script>
+
+
+
+
 </body>
 </html>
