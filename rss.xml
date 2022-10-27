@@ -1,0 +1,155 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>Lynn</title>
+        <link>http://example.com</link>
+        <description></description>
+        <language>en</language>
+        <pubDate>Thu, 27 Oct 2022 14:47:57 +0800</pubDate>
+        <lastBuildDate>Thu, 27 Oct 2022 14:47:57 +0800</lastBuildDate>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/10/27/pulp%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%A5%E9%97%A8/</guid>
+            <title>pulp线性规划入门</title>
+            <link>http://example.com/2022/10/27/pulp%E7%BA%BF%E6%80%A7%E8%A7%84%E5%88%92%E5%85%A5%E9%97%A8/</link>
+            <pubDate>Thu, 27 Oct 2022 14:47:57 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;&lt;img data-src=&#34;/.%5Cimage-20221027150045674.png&#34; alt=&#34;image-20221027150045674&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;/.%5Cimage-20221027152431009.png&#34; alt=&#34;image-20221027152431009&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;怪得很&#34;&gt;&lt;a href=&#34;#怪得很&#34; class=&#34;headerlink&#34; title=&#34;怪得很&#34;&gt;&lt;/a&gt;怪得很&lt;/h3&gt;&lt;p&gt;我不是写了东西嘛？？&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+            <title>hexo+github搭建个人博客</title>
+            <link>http://example.com/2022/10/19/hexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+            <pubDate>Wed, 19 Oct 2022 17:39:07 +0800</pubDate>
+            <description><![CDATA[ &lt;h3 id=&#34;一、安装并配置Node-js（原本就有安装）&#34;&gt;&lt;a href=&#34;#一、安装并配置Node-js（原本就有安装）&#34; class=&#34;headerlink&#34; title=&#34;一、安装并配置Node.js（原本就有安装）&#34;&gt;&lt;/a&gt;一、安装并配置Node.js（原本就有安装）&lt;/h3&gt;&lt;p&gt;参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L20wXzY3MzkyMjczL2FydGljbGUvZGV0YWlscy8xMjYxMTM3NTk/b3BzX3JlcXVlc3RfbWlzYz0lN0IlMjJyZXF1ZXN0X2lkJTIyOiUyMjE2NjYwNzc5ODExNjgwMDE4MDY5NzMyNSUyMiwlMjJzY20lMjI6JTIyMjAxNDA3MTMuMTMwMTAyMzM0Li4lMjIlN0QmcmVxdWVzdF9pZD0xNjY2MDc3OTgxMTY4MDAxODA2OTczMjUmYml6X2lkPTAmdXRtX21lZGl1bT1kaXN0cmlidXRlLnBjX3NlYXJjaF9yZXN1bHQubm9uZS10YXNrLWJsb2ctMn5hbGx+c29iYWlkdWVuZH5kZWZhdWx0LTEtMTI2MTEzNzU5LW51bGwtbnVsbC4xNDIlNUV2NTglNUVwY19zZWFyY2hfdHJlZSwyMDElNUV2MyU1RWNvbnRyb2xfMSZ1dG1fdGVybT0lRTUlQUUlODklRTglQTMlODUlRTUlQjklQjYlRTklODUlOEQlRTclQkQlQUVOb2RlLmpzJnNwbT0xMDE4LjIyMjYuMzAwMS40MTg3&#34;&gt;(1条消息) Node.js安装与配置（详细步骤）_普通网友的博客-CSDN博客_nodejs安装配置&lt;/span&gt;&lt;/p&gt;
+&lt;h4 id=&#34;1、下载Node-js官网下载&#34;&gt;&lt;a href=&#34;#1、下载Node-js官网下载&#34; class=&#34;headerlink&#34; title=&#34;1、下载Node.js官网下载&#34;&gt;&lt;/a&gt;1、下载&lt;a href=&#34;http://nodejs.cn/download/&#34;&gt;&lt;strong&gt;Node.js官网下载&lt;/strong&gt;&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;/.%5Chexo-github%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%5Cimage-20221027145647150.png&#34; alt=&#34;image-20221027145647150&#34;&gt;&lt;/p&gt;
+&lt;p&gt;安装位置与环境变量配置  系统属性-环境变量-系统变量-Path&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/dbEsdpJAbDgfnDouz7Qhmv/image.png?auth_key=1666234294-bFSiCV7NeiRGzAvU7Rk1RG-0-94ff36a7ae15420a032d643c1c7133bf&#34;&gt;&lt;/p&gt;
+&lt;p&gt;验证是否安装成功&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/kLXh7gMpajbJqdbj9UNCAe/image.png?auth_key=1666234294-izaXqxFnVubcfYFA8DVxGE-0-f5f9cdec5158893664763e790f796c97&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2、修改npm全局下载位置（避免占用C盘内存）&#34;&gt;&lt;a href=&#34;#2、修改npm全局下载位置（避免占用C盘内存）&#34; class=&#34;headerlink&#34; title=&#34;2、修改npm全局下载位置（避免占用C盘内存）&#34;&gt;&lt;/a&gt;2、修改npm全局下载位置（避免占用C盘内存）&lt;/h4&gt;&lt;p&gt;原来的缓存地址：&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/eNnqnYndL9bJC8ax5wmdyY/image.png?auth_key=1666234295-msE8GEtxJ2984k1eAhAuRm-0-21922eb21706a57f60e8b140d0b5103a&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/cbJC3bz45mRwkJhMNrdkMp/image.png?auth_key=1666234294-h2XL7ajtg2aZENWg7FrCWM-0-fde18065f2cc0f11ddc43fd5b6f25fcb&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在 nodejs 安装目录下，创建 “node_global” 和 “node_cache” 两个文件夹，但是原来的nodejs安装目录在C盘，所以在其他盘新建了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/gFWe3DbgnbPAdSNwfRTUPS/image.png?auth_key=1666234294-sd5rnjXGR6Zj13QYeG6TMJ-0-fd4ac98e804bd08e8689b0e446937846&#34;&gt;&lt;/p&gt;
+&lt;p&gt;修改默认文件夹&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/orRQBKN7k6WTBpy6Mq4Fiz/image.png?auth_key=1666234294-8cggDtfjFzqLDS9Hj1DE9F-0-470db3ea328d066eec9e6dd0cdf8bc31&#34;&gt;&lt;/p&gt;
+&lt;p&gt;加入变量-仅prefix的&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/rfbUySC6Kj6uK879NPfq3Y/image.png?auth_key=1666234295-w2J4PGi4eAaQYohejseDgi-0-4ed5a196682e80f8a3743b71eea9dcb8&#34;&gt;&lt;/p&gt;
+&lt;p&gt;测试是否成功-下载express，“-g”等同于“–global”，“-g” 是全局安装，不加“-g”就是默认下载到当前目录&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/6AULKW2J9fbAaQtRKdWknB/image.png?auth_key=1666234294-kVjchuxMRjgsaSwyyeK94S-0-291261c5aec2b8da105352b698d6f9b5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;在文件夹中可以看出express下载位置正确&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/g8HwNL7vK5Wh8xLcEBqYQN/image.png?auth_key=1666234295-ge8YMc322Tz6DJGAXfjPWk-0-48a97eb1e4a5d3be207e82d45a37f611&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3、设置镜像，下载速度更快&#34;&gt;&lt;a href=&#34;#3、设置镜像，下载速度更快&#34; class=&#34;headerlink&#34; title=&#34;3、设置镜像，下载速度更快&#34;&gt;&lt;/a&gt;3、设置镜像，下载速度更快&lt;/h4&gt;&lt;p&gt;目前位置是官网&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/a78HU7t9ju9uhEkKhvdP1v/image.png?auth_key=1666234294-u3ja2PZgKcSLa78PPmrs7P-0-423768769f34aacc76a33c2aeab61dd6&#34;&gt;&lt;/p&gt;
+&lt;p&gt;方法一、临时手动更改下载位置（存疑）&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;npm install -g XXX --registry=https://registry.npm.taobao.org&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;方法二、永久切换镜像（这里我没有修改）&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;切换：npm config set registry https://registry.npm.taobao.org/&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;检查是否成功：npm config get registry&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;h4 id=&#34;4、全局下载cnpm&#34;&gt;&lt;a href=&#34;#4、全局下载cnpm&#34; class=&#34;headerlink&#34; title=&#34;4、全局下载cnpm&#34;&gt;&lt;/a&gt;4、全局下载cnpm&lt;/h4&gt;&lt;p&gt;cnpm在安装一些软件时候会比较有优势。但是cnpm一般只用于模块安装，在项目创建与卸载等相关操作时仍使用npm&lt;/p&gt;
+&lt;p&gt;安装 &lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/rsGetAMtCFs6BHsbArJM1Z/image.png?auth_key=1666234294-8YNckabKVuzpsTTehQWAFA-0-cd6b9a1731e281b74a5d48f5d2d9cb18&#34;&gt;&lt;/p&gt;
+&lt;p&gt;检查 cnpm -v（原来下载的也有，但是在C盘，见图2）&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/4khGsDxLivaBz82fuVjekJ/image.png?auth_key=1666234294-aJLPWHRMWm9KaiciceRPSB-0-8eb9c9e0bb3705c4c7eeaaa4aac359ae&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/hh8DdZ3jigpn9s4UBd9Yme/image.png?auth_key=1666234294-6PuX1jTkNqSQJLC4LDpdnw-0-9e704c473b9f0b378e51973c8c78fb40&#34;&gt;&lt;/p&gt;
+&lt;h3 id=&#34;二、安装并配置Git&#34;&gt;&lt;a href=&#34;#二、安装并配置Git&#34; class=&#34;headerlink&#34; title=&#34;二、安装并配置Git&#34;&gt;&lt;/a&gt;二、安装并配置Git&lt;/h3&gt;&lt;h4 id=&#34;1、下载https-git-scm-com-downloads&#34;&gt;&lt;a href=&#34;#1、下载https-git-scm-com-downloads&#34; class=&#34;headerlink&#34; title=&#34;1、下载https://git-scm.com/downloads&#34;&gt;&lt;/a&gt;1、下载&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXQtc2NtLmNvbS9kb3dubG9hZHM=&#34;&gt;https://git-scm.com/downloads&lt;/span&gt;&lt;/h4&gt;&lt;p&gt;参考文献&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly93d3cuY25ibG9ncy5jb20veHVld2Vpc3VveW9uZy9wLzExOTE0MDQ1Lmh0bWw=&#34;&gt;Windows系统Git安装教程（详解Git安装过程） - 学为所用 - 博客园 (cnblogs.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/viK3RT8YZ4VYD5rueXEeRF/image.png?auth_key=1666234340-scKwx518LZjY5X1xRxeK7H-0-f275e8fe44b3c192866289b753669ac2&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2、指定用户名和邮箱&#34;&gt;&lt;a href=&#34;#2、指定用户名和邮箱&#34; class=&#34;headerlink&#34; title=&#34;2、指定用户名和邮箱&#34;&gt;&lt;/a&gt;2、指定用户名和邮箱&lt;/h4&gt;&lt;p&gt;git config –global 参数，有了这个参数，表示你这台机器上所有的Git仓库都会使用这个配置，当然你也可以对某个仓库指定的不同的用户名和邮箱&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/mdAsx1ns1Zd7Me1UAKnFhh/image.png?auth_key=1666234340-cbtBCm6szUWNK2QaUXi6an-0-62bc45726e5a25aebef3bcee560c9e11&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3、一些操作（后面补补）&#34;&gt;&lt;a href=&#34;#3、一些操作（后面补补）&#34; class=&#34;headerlink&#34; title=&#34;3、一些操作（后面补补）&#34;&gt;&lt;/a&gt;3、一些操作（后面补补）&lt;/h4&gt;&lt;p&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vcC8zMDA0NDY5Mg==&#34;&gt;Git使用教程,最详细，最傻瓜，最浅显，真正手把手教 - 知乎 (zhihu.com)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;3.1 创建版本库&amp;#x2F;仓库（有弄过）&lt;/p&gt;
+&lt;p&gt;所有文件都可以被Git管理起来，每个文件的修改，删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻还可以将文件”还原”&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/5FCMqBAnHtasXLe2575AFb/image.png?auth_key=1666234340-c1xQhnFh4pbUNAKfS59N64-0-858e6b4fa531dd68c4fc206f901147d0&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;4、远程仓库&#34;&gt;&lt;a href=&#34;#4、远程仓库&#34; class=&#34;headerlink&#34; title=&#34;4、远程仓库&#34;&gt;&lt;/a&gt;4、远程仓库&lt;/h4&gt;&lt;p&gt;4.1生成SSH Key，位置见图2，id_rsa是私钥，不能泄露出去，id_rsa.pub是公钥，可以放心地告诉任何人？？？我的公钥呢——第二个文件即是公钥，查看生成哪些文件的时候可以见图3？？？&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/pP3hdS232zBmiexdWB9mCA/image.png?auth_key=1666234341-gTfwAxWwns1WBa2DhNgD4R-0-e11c1ada8f290984fc61d4403c0dc67d&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/uabqP7kwtZEr5dhDw7oQid/image.png?auth_key=1666234342-vRpCss79C8yJHSGQoZxwHk-0-507f00a4ff294f1e94b7cebb20f539fd&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/cJzmmx99bX31b7Nxv6hC36/image.png?auth_key=1666234340-t3c65SY6VpVP4GAdJDjKAs-0-d672bf09f1087997aa909e9b4bfd404c&#34;&gt;&lt;/p&gt;
+&lt;p&gt;测试是否绑定成功&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/mdv9aCf9frgckFKYg533pA/image.png?auth_key=1666234341-hbGMMnrAzF6YhiVeCmb3jn-0-80970ff71e6f9fcc33f5ea664e37db27&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.2在GitHub中增加SSH Key  setting-SSH and GPG Keys-NEW SSH key-填写信息（公钥）即可&lt;/p&gt;
+&lt;p&gt;登录github,打开” settings”中的SSH Keys页面，然后点击“Add SSH Key”,填上任意title，在Key文本框里黏贴id_rsa.pub文件的内容&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/gZc2FMpKer8uPaiAKxR6rJ/image.png?auth_key=1666234341-paoWEbmt2SM9Gifc3YqDYT-0-526aaf39daff377317694c9690068bc0&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.3 在GitHub创建仓库（本地已经创建）希望这两个仓库进行远程同步，这样github的仓库可以作为备份，又可以其他人通过该仓库来协作&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/ug3LRbL6zQr9qJ4pQNQELp/image.png?auth_key=1666234341-5x1WqdyX1EHZNvATf4uqPb-0-3faa506a0603379e791bc7ee8b095bcb&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/nL5NgVEjMGgHcHrThe5U9Z/image.png?auth_key=1666234341-8uWNBYYkxpGcEYA8TUvzqn-0-68ee1ef56f94645945c0b9eb908578ea&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.4 &lt;strong&gt;把本地仓库的内容推送到GitHub仓库&lt;/strong&gt; 先有本地库，后有远程库时候，如何关联远程库&lt;/p&gt;
+&lt;p&gt;创建关联 git remote add origin XXX&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/rkfacqynSmjKzeEARVkNvJ/image.png?auth_key=1666234341-bLysHSHU2us2PTCLAVAVv-0-582abcc741f8b060bd0091b23b72bd40&#34;&gt;&lt;/p&gt;
+&lt;p&gt;**推送 git push -u origin master **后续更新内容后可以再次推送，去掉-u&lt;/p&gt;
+&lt;p&gt;出现问题原因：网络问题&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/gyUKUKWJniZpHPCa76v6sN/image.png?auth_key=1666234341-oyMAa9eN3qpqxfnzMYb7yn-0-6716b08a1a2b4391d039df6d7e74d61a&#34;&gt;&lt;/p&gt;
+&lt;p&gt;解决：换个时间就可以了—看起来跟没解决一样，但是，已经推过去了，见图2&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/n9zEF1vWGGwBmXnr5z9cER/image.png?auth_key=1666234341-qgD5cuUQgruXGb9gKbCbA2-0-00d439b359a046b0de6a2850687db6cc&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/6VuVDzUBZZ7JoM2nVeFcm7/image.png?auth_key=1666234342-sAZKxts7i9nFi6yDpjpswY-0-e96119949f6573ade2a4a27765db0c16&#34;&gt;&lt;/p&gt;
+&lt;p&gt;4.5 克隆远程库&lt;/p&gt;
+&lt;p&gt;创建了一个新的仓库&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/6rWb55DCD3rruYjbPwrpkw/image.png?auth_key=1666234341-he9LPJ6LMtTf7np6114xm8-0-376f055db201142acf88cb2d7b106a94&#34;&gt;&lt;/p&gt;
+&lt;p&gt;克隆 git clone XXX,如图2可以看出成功了~~&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/oFuTSE3REDJqKEWr9aAzf/image.png?auth_key=1666234341-qghf99fsXsVf8MkT2hJipr-0-852e6c7a093876902cee8eb5ea829ed3&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/67RR2EDFKFhw8DhhwuekEr/image.png?auth_key=1666234341-9Qaa9BqKg6UGNxEPePuYgj-0-7a11ee4a31972f7bfe4973655427dc24&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;5、创建、合并、删除分支&#34;&gt;&lt;a href=&#34;#5、创建、合并、删除分支&#34; class=&#34;headerlink&#34; title=&#34;5、创建、合并、删除分支&#34;&gt;&lt;/a&gt;5、创建、合并、删除分支&lt;/h4&gt;&lt;p&gt;在Git里，这个分支叫主分支，即master分支。HEAD严格来说不是指向提交，而是指向master，master才是指向提交的，所以，HEAD指向的就是当前分支。&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;6&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;创建分支：git branch 分支名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;切换分支/master：git checkout 分支名/master&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;创建并切换分支: git checkout -b 分支名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;查看分支：git branch  #带星号表示当前在哪个分支&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;合并分支：git merge 分支名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;删除分支：git branch -d 分支名&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/achQnr2JmjSEH1wgbrjBFA/image.png?auth_key=1666234341-mFzM4q6UuxC19UaKEK3XeF-0-960db621c7b583031c5d2a5fb80c5c53&#34;&gt;&lt;/p&gt;
+&lt;p&gt;添加内容&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/fQ1MFyLNgiErMSiDCZZbdL/image.png?auth_key=1666234341-jzW9Dh2FAXk2W8qwRvHm76-0-68dd1d09d86e15508f793507a7ac8c30&#34;&gt;&lt;/p&gt;
+&lt;p&gt;提交内容出现问题&lt;/p&gt;
+&lt;figure class=&#34;highlight text&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;先touch一下，再cat一下，最后git add,再git commit  #存疑哈，瞎猫撞到死耗子&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;一些命令：&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;保存：git add 文件名&lt;/span&gt;&lt;br&gt;&lt;span class=&#34;line&#34;&gt;提交：git commit -m &amp;quot;描述&amp;quot;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/7nXRnPmTjZTLmkDY3JvRgV/image.png?auth_key=1666234341-hQaNXYrhxCy1jxdBksuu32-0-56c04718aab85bd86ff031234eb46810&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/eKmQfUg2QYV64uT1ApSCCU/image.png?auth_key=1666234341-k91ZScnhqDLmYaoGEihRnY-0-5b3931f72d2509607a5faabef47c138d&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/aHNUAhVKZqFRLWBgtURdMk/image.png?auth_key=1666234341-j1RVyixJWeyPdQaAXe3Ci-0-bc51e137a3424ef95a6fdbb64509d03a&#34;&gt;&lt;/p&gt;
+&lt;p&gt;合并分支，可以看出未合并前内容没有更新，合并后内容更新了，且推送到远程库，见图2图3&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/puvRVkbFrvu5dnYuYnk2o4/image.png?auth_key=1666234342-o2jNRvoicLhSZ6tH72FroE-0-44de2a9ae7ca5b5ea8fd23b4b0eb4a77&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/5FrLJxgZuiQdqMYEt29Fer/image.png?auth_key=1666234341-bTJUtvRsk7xr3qjwgbqxQo-0-24710a6ef4de2b364a74af05b2849c67&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/x1Drbv7GfjyTqh3cjg8kXR/image.png?auth_key=1666234341-g8ft18xB1tNTufQ3BeFPnM-0-85aeba133cab56c8b22d293ff2e900a5&#34;&gt;&lt;/p&gt;
+&lt;p&gt;删除分支&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/6WEEFLzpMBMor5FW1vbLeW/image.png?auth_key=1666234341-mnmpah125ozWGTDoqqZ6ik-0-dd0873759617db4a7f32b14353bec4fd&#34;&gt;&lt;/p&gt;
+&lt;p&gt;基本操作差不多了，更多操作还没学，有空再看吧！&lt;/p&gt;
+&lt;h3 id=&#34;三、hexo部署到GitHub&#34;&gt;&lt;a href=&#34;#三、hexo部署到GitHub&#34; class=&#34;headerlink&#34; title=&#34;三、hexo部署到GitHub&#34;&gt;&lt;/a&gt;三、hexo部署到GitHub&lt;/h3&gt;&lt;h4 id=&#34;1、下载hexo并初始化&#34;&gt;&lt;a href=&#34;#1、下载hexo并初始化&#34; class=&#34;headerlink&#34; title=&#34;1、下载hexo并初始化&#34;&gt;&lt;/a&gt;1、下载hexo并初始化&lt;/h4&gt;&lt;p&gt;下载 npm install -g hexo&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/epyDtoMzoUyMUBU9oMnXQW/image.png?auth_key=1666234361-sxroAPgskMdweubscCqurs-0-dfdb11cd8c6383b25106ae43f228bfea&#34;&gt;&lt;/p&gt;
+&lt;p&gt;初始化 箭头所指英文☞可以用了&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/nyvnPdTspjUhJ5A13Zpxpa/image.png?auth_key=1666234361-p2R69EPD7ozR5PzkJ5MM3w-0-3ddc260adb15295a5678c98b1d44a46d&#34;&gt;&lt;/p&gt;
+&lt;p&gt;生成本地页面 ，链接为&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cDovL2xvY2FsaG9zdDo0MDAwLw==&#34;&gt;http://localhost:4000/&lt;/span&gt;，页面打开后如图2&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/33aMMLrE6aBdNV8xkERs5P/image.png?auth_key=1666234361-v7qdBJgEEC7ZpEXoC2jakC-0-5a919b56ffe701bfe18fbb39afcf8dc7&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/4PoxuAwATYQCPvppDPehU5/image.png?auth_key=1666234361-tb5QRsn4NVrgfpv1GjoBnP-0-5daa9db93efde938ea5f44d316788404&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;2、上传gitbub&#34;&gt;&lt;a href=&#34;#2、上传gitbub&#34; class=&#34;headerlink&#34; title=&#34;2、上传gitbub&#34;&gt;&lt;/a&gt;2、上传gitbub&lt;/h4&gt;&lt;p&gt;修改_config.yml,注意空格&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/8H8W89sfNjBJPTQ4nkJs2V/image.png?auth_key=1666234361-coDtbFhaAbbxWA8YzsTyre-0-cf0ddfd15000befbe7f8f604de63d81c&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/a3jpgGULo5nX8H1WewJ867/image.png?auth_key=1666234361-qE4fxiYUYgVxcu2Pjjv1dg-0-e2dd901a32c2bafcf1d8c7c4aa024e11&#34;&gt;&lt;/p&gt;
+&lt;p&gt;注意！！！HxlLynn要和自己的github的用户名一样，.github.io.git不要变，在github建库时是红框完整部分，建库后要修改成如图2，这样才不会出现404的情况，参考：&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9kb2NzLmdpdGh1Yi5jb20vY24vcGFnZXMvZ2V0dGluZy1zdGFydGVkLXdpdGgtZ2l0aHViLXBhZ2VzL2NvbmZpZ3VyaW5nLWEtcHVibGlzaGluZy1zb3VyY2UtZm9yLXlvdXItZ2l0aHViLXBhZ2VzLXNpdGU=&#34;&gt;配置 GitHub Pages 站点的发布源 - GitHub Docs&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/gUiRbsySc8ibDmeaKv617D/image.png?auth_key=1666234361-2rPQBk17upnyDBrwqED4dZ-0-6db67a0ef9d01f738b25b6f60c115eb2&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/i1zk3ULUwFqL9pp3qfNVFo/image.png?auth_key=1666234361-x5HGE9ZicW48LhdwYeJthB-0-c398629b01ef07eab306e1c205da4684&#34;&gt;&lt;/p&gt;
+&lt;h4 id=&#34;3、安装自动部署工具—每次都要&#34;&gt;&lt;a href=&#34;#3、安装自动部署工具—每次都要&#34; class=&#34;headerlink&#34; title=&#34;3、安装自动部署工具—每次都要&#34;&gt;&lt;/a&gt;3、安装自动部署工具—每次都要&lt;/h4&gt;&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/vELUov7RWP8RRzpp1fAmuE/image.png?auth_key=1666234361-tuzAaC5q8DPNvwJivXSinm-0-3a2a0335f34ddceac35c717604239347&#34;&gt;&lt;/p&gt;
+&lt;p&gt;生成页面&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/efFpXakv1ryjWzg4ydzDgK/image.png?auth_key=1666234361-r3W9kDkChmmG7JwUKdeRU1-0-42da49eadc15d21c0bb573ac2b1b85c4&#34;&gt;&lt;/p&gt;
+&lt;p&gt;上传&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/eVeXuVLA7VqxhBCRvxDpTK/image.png?auth_key=1666234361-mAz1Go1fVXsj4b4Lgg1BTp-0-169b3d06cced30a4732903e3fd6f7fd9&#34;&gt;&lt;/p&gt;
+&lt;p&gt;完成&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;https://secure2.wostatic.cn/static/p2eWu4b61KgRHoCb1J2bv8/image.png?auth_key=1666234361-hdApPV2gmJQDc6TckfEvcU-0-91528419b600355863843da8bd7a47cc&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
+            <guid isPermalink="true">http://example.com/2022/10/19/hello-world/</guid>
+            <title>烦死了</title>
+            <link>http://example.com/2022/10/19/hello-world/</link>
+            <pubDate>Wed, 19 Oct 2022 16:42:04 +0800</pubDate>
+            <description><![CDATA[ &lt;p&gt;Welcome to &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvLw==&#34;&gt;Hexo&lt;/span&gt;! This is your very first post. Check &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv&#34;&gt;documentation&lt;/span&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=&#34;&gt;troubleshooting&lt;/span&gt; or you can ask me on &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==&#34;&gt;GitHub&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;Quick-Start&#34;&gt;&lt;a href=&#34;#Quick-Start&#34; class=&#34;headerlink&#34; title=&#34;Quick Start&#34;&gt;&lt;/a&gt;Quick Start&lt;/h2&gt;&lt;h3 id=&#34;Create-a-new-post&#34;&gt;&lt;a href=&#34;#Create-a-new-post&#34; class=&#34;headerlink&#34; title=&#34;Create a new post&#34;&gt;&lt;/a&gt;Create a new post&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo new &lt;span class=&#34;string&#34;&gt;&amp;quot;My New Post&amp;quot;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s&#34;&gt;Writing&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Run-server&#34;&gt;&lt;a href=&#34;#Run-server&#34; class=&#34;headerlink&#34; title=&#34;Run server&#34;&gt;&lt;/a&gt;Run server&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo server&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=&#34;&gt;Server&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Generate-static-files&#34;&gt;&lt;a href=&#34;#Generate-static-files&#34; class=&#34;headerlink&#34; title=&#34;Generate static files&#34;&gt;&lt;/a&gt;Generate static files&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo generate&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s&#34;&gt;Generating&lt;/span&gt;&lt;/p&gt;
+&lt;h3 id=&#34;Deploy-to-remote-sites&#34;&gt;&lt;a href=&#34;#Deploy-to-remote-sites&#34; class=&#34;headerlink&#34; title=&#34;Deploy to remote sites&#34;&gt;&lt;/a&gt;Deploy to remote sites&lt;/h3&gt;&lt;figure class=&#34;highlight bash&#34;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&#34;gutter&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&#34;code&#34;&gt;&lt;pre&gt;&lt;span class=&#34;line&#34;&gt;$ hexo deploy&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;More info: &lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvb25lLWNvbW1hbmQtZGVwbG95bWVudC5odG1s&#34;&gt;Deployment&lt;/span&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>
